@@ -1,0 +1,100 @@
+@font-face {
+  font-family: hyliaSerifBeta-Regural;
+  src: url('./fuentes/HyliaSerifBeta-Regular.otf');
+}
+@font-face {
+  font-family: triforce;
+  src: url('./fuentes/Triforce.ttf');
+}
+@font-face {
+  font-family: ReturnofGanon;
+  src: url('./fuentes/ReturnofGanon.ttf');
+}
+@font-face {
+  font-family: SherwoodRegular;
+  src: url('./fuentes/SherwoodRegular.ttf');
+}
+@font-face {
+  font-family: nintendo-nes-font;
+  src: url('./fuentes/nintendo-nes-font.ttf');
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  color: #e52914;
+  text-shadow: 0.2rem 0.4rem 0rem rgb(51, 50, 50);
+}
+
+header nav a {
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+
+header {
+  background-color: rgb(63, 148, 63);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-family: triforce;
+  font-size: 60px;
+}
+
+img {
+  width: 10rem;
+}
+
+header nav a {
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+header.link {
+  opacity: 10;
+}
+.audio {
+  max-height: 2rem;
+}
+.ocarine {
+  height: 3rem;
+  width: 3rem;
+  margin-left: 10rem;
+}
+
+.slider__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  text-align: center;
+  flex-direction: column;
+}
+footer {
+  background-color: black;
+}
+footer p {
+  color: blanchedalmond;
+}
+
+@media (max-width: 768px) {
+  .slider__body {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+  }
+  .slider__picture {
+    grid-row: 1/2;
+  }
+  .slider__img {
+    width: 210px;
+    height: 210px;
+  }
+}

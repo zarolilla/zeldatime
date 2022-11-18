@@ -1,0 +1,85 @@
+@font-face {
+  font-family: hyliaSerifBeta-Regural;
+  src: url('./fuentes/HyliaSerifBeta-Regular.otf');
+}
+@font-face {
+  font-family: triforce;
+  src: url('./fuentes/Triforce.ttf');
+}
+@font-face {
+  font-family: ReturnofGanon;
+  src: url('./fuentes/ReturnofGanon.ttf');
+}
+@font-face {
+  font-family: SherwoodRegular;
+  src: url('./fuentes/SherwoodRegular.ttf');
+}
+@font-face {
+  font-family: nintendo-nes-font;
+  src: url('./fuentes/nintendo-nes-font.ttf');
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header h1 {
+  color: #e52914;
+  text-shadow: 0.2rem 0.4rem 0rem rgb(51, 50, 50);
+}
+
+header nav a {
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+
+header {
+  background-color: rgb(63, 148, 63);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-family: triforce;
+  font-size: 60px;
+}
+
+img {
+  width: 10rem;
+}
+
+header nav a {
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+header.link {
+  opacity: 10;
+}
+
+body {
+  text-align: center;
+}
+form ul li {
+  padding: 1rem;
+}
+legend {
+  text-transform: uppercase;
+  text-decoration-line: underline;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+.slider__text {
+  max-width: 90%;
+
+  padding: 2rem;
+}
+
+footer {
+  background-color: black;
+}
+footer p {
+  color: blanchedalmond;
+}

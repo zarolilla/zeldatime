@@ -1,0 +1,158 @@
+@font-face {
+  font-family: hyliaSerifBeta-Regural;
+  src: url('./fuentes/HyliaSerifBeta-Regular.otf');
+}
+@font-face {
+  font-family: triforce;
+  src: url('./fuentes/Triforce.ttf');
+}
+@font-face {
+  font-family: ReturnofGanon;
+  src: url('./fuentes/ReturnofGanon.ttf');
+}
+@font-face {
+  font-family: SherwoodRegular;
+  src: url('./fuentes/SherwoodRegular.ttf');
+}
+@font-face {
+  font-family: nintendo-nes-font;
+  src: url('./fuentes/nintendo-nes-font.ttf');
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+header h1 {
+  color: #e52914;
+  text-shadow: 0.2rem 0.4rem 0rem rgba(51, 50, 50, 0.788);
+  font-size: 6rem;
+  -webkit-text-stroke: 2px black;
+}
+
+header {
+  background-color: rgb(63, 148, 63);
+  color: white;
+  padding: 2rem;
+  font-family: triforce;
+}
+
+.slider__container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  align-items: center;
+  gap: 1em;
+}
+.slider__img {
+  padding: 2rem;
+}
+
+.slider__body {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+  display: grid;
+  background-color: rgba(251, 252, 250, 0.993);
+  border-radius: 1rem;
+  border: solid 5px black;
+  grid-template-columns: 1fr max-content;
+  transition: opacity 1.5s;
+}
+.slider__body--show1 {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.slider__container {
+  padding: 2rem;
+}
+
+.slider__text {
+  max-width: 90%;
+
+  padding: 2rem;
+}
+.slider__review {
+  font-family: nintendo-nes-font;
+}
+.slider__text h2 {
+  font-family: SherwoodRegular;
+  color: rgb(197, 0, 0);
+  text-shadow: rgba(32, 28, 19, 0.603) 4px 3px 2px;
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.slider__review {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.slider__arrow {
+  cursor: pointer;
+  width: 90%;
+  color: antiquewhite;
+}
+
+.slider__arrow:nth-of-type(2) {
+  justify-self: end;
+}
+
+header nav a {
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.568);
+  font-size: 3rem;
+}
+
+.link {
+  width: 20rem;
+  height: 20rem;
+}
+
+.slider {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.452);
+}
+
+.slider__text h3 {
+  text-decoration: underline;
+}
+footer {
+  background-color: black;
+}
+footer p {
+  color: aliceblue;
+}
+
+/* animacion */
+
+.slider__review {
+  display: block;
+  white-space: nowrap;
+  border-right: 0.15rem solid black;
+  width: 79ch;
+  font-weight: 300;
+  animation: typing 2s steps(250), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 1.7;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 600px) {
+}

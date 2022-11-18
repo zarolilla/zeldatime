@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="anadir.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/Link_Artwork_LAR.webp" alt="link">
+        <h1>TIMELINE ZELDA</h1>
+        <nav class="navegador">
+            <a href="/index.html">inicio</a>
+
+            <a href="/juegos.html">Listado de Juegos</a>
+        </nav>
+    </header>
+<main>
+    <form action="text" id="formulario" class="form">
+        <fieldset>
+            <legend>Añadir juegos</legend>
+            
+            <ul>
+                <li>
+                    <label for="title">TITULO DEL JUEGO:</label>
+                    <input type="text" name="title" id="title" >
+                </li>
+                <li>
+                    <label for="age">AÑO:</label>
+                    <input type="text" name="age" id="age" value="">
+                </li>
+                <li>
+                    <label for="descrip">descripcion:</label>
+                    <input type="text" name="descript" id="descript" >
+                    
+                </li>
+                <li>
+                    <label for="portada">CARATULA:</label>
+                    <input type="file" name="portada" accept="image/jpeg" id="portada" >
+                </li>
+                <button type="submit" id="button">Enviar</button>
+            </ul>
+        </fieldset>
+    </form>
+    <ul class="nuevo" id="newul"></ul>
+</main>
+   
+    <footer>
+        <p>&COPY; Proyecto David Zarola</p>
+    </footer>
+
+    <script type="module" src="js/anadir.js"></script>
+
+
+</body>
+
+</html>
