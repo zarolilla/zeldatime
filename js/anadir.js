@@ -23,7 +23,7 @@ form.addEventListener('submit', (event) => {
   let newGames = {
     date: age.value,
     title: title.value,
-    image: localStorage.getItem('recent-image'),
+    image: images.src,
     text: descrip.value,
   };
   console.log(newGames);
