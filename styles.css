@@ -130,9 +130,9 @@ footer p {
   color: aliceblue;
 }
 
-/* animacion */
+/* animacion maquina escribir funciona pero no me saca todo el texto*/
 
-.slider__review {
+/*.slider__review {
   display: block;
   white-space: nowrap;
   border-right: 0.15rem solid black;
@@ -142,7 +142,7 @@ footer p {
   overflow: hidden;
   font-size: 15px;
   line-height: 1.7;
-}
+}*/
 @keyframes typing {
   from {
     width: 0;
