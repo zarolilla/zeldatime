@@ -108,6 +108,7 @@ header nav a {
   color: white;
   text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.568);
   font-size: 3rem;
+  padding: 1rem;
 }
 
 .link {

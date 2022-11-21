@@ -58,6 +58,10 @@ header nav a {
   color: white;
   text-shadow: 0.2rem 0.2rem 0.2rem black;
 }
+nav#anadir {
+  margin-left: 1rem;
+}
+
 header.link {
   opacity: 10;
 }
