@@ -2,8 +2,6 @@
 
 import data from '../json/zelda-timeline.json' assert { type: 'json' };
 
-data.sort((a, b) => a.date - b.date);
-console.log(data);
 const añadir = data;
 
 const anidar = JSON.parse(localStorage.getItem('juegosNuevos'));
@@ -11,6 +9,7 @@ console.log(anidar);
 for (const puchear of anidar) {
   console.log(anidar);
   añadir.push(puchear);
+  añadir.sort((a, b) => a.date - b.date);
 }
 
 const div = document.createElement('div');
@@ -29,7 +28,7 @@ for (const datos of data) {
   <div class="slider__text">    
   <h3>${datos.date}</h3>
   <h2 class="subtitle">${datos.title}</h2>
-  <p class="slider__review">${datos.text}</p>
+  <p class="slider__review" id="escribir">${datos.text}</p>
   </div>  
   
   
@@ -46,3 +45,19 @@ console.log(section);
 console.log(frag);
 
 section.append(div);
+
+let animado = document.querySelectorAll('.slider__body');
+console.log(animado);
+function mostrarScroll() {
+  let scrollTop = document.documentElement.scrollTop;
+  for (let i = 0; i < animado.length; i++) {
+    let alturaAnimado = animado[i].offsetTop;
+    if (alturaAnimado - 800 < scrollTop) {
+      animado[i].style.opacity = 1;
+      animado[i].classList.add('derecha');
+
+      console.log(animado);
+    }
+  }
+}
+window.addEventListener('scroll', mostrarScroll);

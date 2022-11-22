@@ -23,7 +23,7 @@ for (const datos of data) {
   <div class="slider__text">    
   <h3>${datos.date}</h3>
   <h2 class="subtitle">${datos.title}</h2>
-  <p class="slider__review">${datos.text}</p>
+  <p class="slider__review" id="escribir">${datos.text} </p>
   </div>  
   <img class="slider__img" src="${datos.image} " alt="${datos.date} ">
   
@@ -66,3 +66,18 @@ section.append(div);
     slider[value - 1].classList.toggle('slider__body--show1');
   }
 })();
+
+let text = document.getElementById('escribir');
+let str = text.innerHTML;
+text.innerHTML = '';
+let speed = 20;
+var e = 0;
+
+function typeWriter() {
+  if (e < str.length) {
+    text.innerHTML += str.charAt(e);
+    e++;
+    setTimeout(typeWriter, speed);
+  }
+}
+setTimeout(typeWriter, speed);

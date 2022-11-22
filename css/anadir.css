@@ -28,6 +28,7 @@
 header h1 {
   color: #e52914;
   text-shadow: 0.2rem 0.4rem 0rem rgb(51, 50, 50);
+  padding-bottom: 1rem;
 }
 
 header nav a {
@@ -45,7 +46,7 @@ header {
 }
 
 img {
-  width: 10rem;
+  width: 15rem;
 }
 
 header nav a {

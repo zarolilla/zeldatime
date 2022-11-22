@@ -51,6 +51,7 @@ body {
 header h1 {
   color: #e52914;
   text-shadow: 0.2rem 0.4rem 0rem rgb(51, 50, 50);
+  padding-bottom: 1rem;
 }
 
 header nav a {
@@ -66,10 +67,23 @@ header {
   font-family: triforce;
   font-size: 60px;
 }
+
+img {
+  width: 10rem;
+}
 .slider__text h2 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2rem;
 }
+.slider__text {
+  text-align: center;
+  max-width: 40rem;
+  max-height: 30rem;
+}
+p {
+  opacity: 50%;
+}
+
 .slider__text h3 {
   text-decoration: underline;
 }
@@ -115,7 +129,27 @@ footer {
 footer p {
   color: blanchedalmond;
 }
-.slider__img {
+
+.slider__body {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.slider__body--show1 {
+  opacity: 1;
+}
+.slider__body--show2 {
+  opacity: 1;
+}
+.derecha {
+  animation: derecha 0.5s;
+}
+@keyframes derecha {
+  0% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
