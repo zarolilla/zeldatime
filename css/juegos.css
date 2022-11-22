@@ -113,6 +113,7 @@ header.link {
   height: 3rem;
   width: 3rem;
   margin-left: 10rem;
+  image-resolution: 500px;
 }
 
 .slider__body {

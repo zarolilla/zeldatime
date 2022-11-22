@@ -24,6 +24,14 @@
   box-sizing: border-box;
   padding: 0;
 }
+.audio {
+  max-height: 2rem;
+}
+.ocarine {
+  height: 3rem;
+  width: 3rem;
+  margin-left: 10rem;
+}
 
 header h1 {
   color: #e52914;
