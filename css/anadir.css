@@ -1,22 +1,22 @@
 @font-face {
   font-family: hyliaSerifBeta-Regural;
-  src: url('./fuentes/HyliaSerifBeta-Regular.otf');
+  src: url('/fuentes/HyliaSerifBeta-Regular.otf');
 }
 @font-face {
   font-family: triforce;
-  src: url('./fuentes/Triforce.ttf');
+  src: url('/fuentes/Triforce.ttf');
 }
 @font-face {
   font-family: ReturnofGanon;
-  src: url('./fuentes/ReturnofGanon.ttf');
+  src: url('/fuentes/ReturnofGanon.ttf');
 }
 @font-face {
   font-family: SherwoodRegular;
-  src: url('./fuentes/SherwoodRegular.ttf');
+  src: url('/fuentes/SherwoodRegular.ttf');
 }
 @font-face {
   font-family: nintendo-nes-font;
-  src: url('./fuentes/nintendo-nes-font.ttf');
+  src: url('/fuentes/nintendo-nes-font.ttf');
 }
 
 * {

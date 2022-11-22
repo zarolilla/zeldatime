@@ -4,14 +4,14 @@ import data from '../json/zelda-timeline.json' assert { type: 'json' };
 
 data.sort((a, b) => a.date - b.date);
 console.log(data);
-/*const añadir = data;
+const añadir = data;
 
 const anidar = JSON.parse(localStorage.getItem('juegosNuevos'));
 console.log(anidar);
 for (const puchear of anidar) {
   console.log(anidar);
   añadir.push(puchear);
-}*/
+}
 
 const div = document.createElement('div');
 div.classList.add('slider__container', 'container');

@@ -3,8 +3,7 @@
 const form = document.querySelector('form#formulario');
 
 console.log(form);
-let juegosNuevos;
-const images = localStorage.getItem('recent-image');
+let juegosNuevos = [];
 const title = form.elements.title;
 const age = form.elements.age;
 const descrip = form.elements.descript;
@@ -18,12 +17,13 @@ let portada = form.elements.portada.addEventListener('change', function () {
 });
 
 form.addEventListener('submit', (event) => {
+  const images = localStorage.getItem('recent-image');
   event.preventDefault();
 
   let newGames = {
     date: age.value,
     title: title.value,
-    image: images.src,
+    image: images,
     text: descrip.value,
   };
   console.log(newGames);
@@ -33,7 +33,7 @@ form.addEventListener('submit', (event) => {
   localStorage.setItem('juegosNuevos', JSON.stringify(juegosNuevos));
   form.reset();
 });
-console.log(images);
+
 /*
 ###### Mi primer intento fue imprimir con dom en pantalla el añadir ######
 
