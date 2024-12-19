@@ -1,4 +1,13 @@
 'use strict';
+fetch('../json/zelda-timeline.json')
+  .then(response => response.json())  // Convertimos la respuesta a JSON
+  .then(data => {
+    data.sort((a, b) => a.date - b.date);   // Ordenamos los datos por fecha
+    console.log(data);    // Verifica los datos en consola
+    renderSlider(data);   // Llama a la función para renderizar el slider
+    typeWriterEffect();    // Inicia el efecto de máquina de escribir
+  })
+  .catch(error => console.error('Error al cargar el JSON:', error));
 
 import data from '../json/zelda-timeline.json' assert { type: 'json' };
 
